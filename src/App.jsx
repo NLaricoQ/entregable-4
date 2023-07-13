@@ -4,10 +4,11 @@ import Header from "./components/Header/Header";
 import { getAllUsers } from "./services/getAllUsers";
 import UserList from "./components/UserList/UserList";
 import Modal from "./components/Modal/Modal";
-import UserForm from "./components/userForm/userForm";
+
 import { createUser } from "./services/createUser";
 import { updateUser } from "./services/updateUser";
 import { deleteUser } from "./services/deleteUser";
+import UserForm from "./components/UserForm/UserForm";
 
 function App() {
   const [users, setUsers] = useState([]);

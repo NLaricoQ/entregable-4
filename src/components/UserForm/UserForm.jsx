@@ -10,7 +10,7 @@ const UserForm = ({ onClose, onSend, initialData }) => {
   return (
     <form className="user-form" onSubmit={handleSubmit(onSubmit)}>
       <h2 className="user-form-title">
-        {initialData ? "Editar Usuario" : "Crear Usuario"}
+        {initialData ? "Editar Usuario" : "Create User"}
       </h2>
       <button type="button" className="close-modal-button" onClick={onClose}>
         X
@@ -18,29 +18,29 @@ const UserForm = ({ onClose, onSend, initialData }) => {
       <div className="input-container">
         <div className="user-form-input-container">
           <label className="user-form-label" htmlFor="nameId">
-            Nombre
+            Name
           </label>
           <input
             type="text"
-            placeholder="Nelson"
+            placeholder="Example: Nelson"
             id="nameId"
             {...register("first_name")}
           ></input>
         </div>
         <div className="user-form-input-container">
           <label className="user-form-label" htmlFor="lastNameId">
-            Apellido
+            Lastname
           </label>
           <input
             type="text"
-            placeholder="Larico"
+            placeholder="Example: Larico"
             id="lastNameId"
             {...register("last_name")}
           ></input>
         </div>
         <div className="user-form-input-container">
           <label className="user-form-label" htmlFor="emailId">
-            Correo
+            Email
           </label>
           <input
             type="email"
@@ -51,7 +51,7 @@ const UserForm = ({ onClose, onSend, initialData }) => {
         </div>
         <div className="user-form-input-container">
           <label className="user-form-label" htmlFor="passwordId">
-            Contraseña
+            Password
           </label>
           <input
             type="password"
@@ -62,7 +62,7 @@ const UserForm = ({ onClose, onSend, initialData }) => {
         </div>
         <div className="user-form-input-container">
           <label className="user-form-label" htmlFor="birthdayId">
-            Cumpleaños
+            Birthday
           </label>
           <input type="date" id="birthdayId" {...register("birthday")}></input>
         </div>
