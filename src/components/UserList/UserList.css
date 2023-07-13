@@ -1,0 +1,87 @@
+.user-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  gap: 5rem;
+  margin: 0;
+  padding: 5rem;
+  width: 100%;
+}
+
+.user-li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-basis: 0;
+
+  min-width: 30%;
+  height: 300px;
+}
+.user-li:hover {
+  border: lightseagreen 2px solid;
+}
+
+.user-article {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.user-data {
+  width: 100%;
+  height: 80%;
+}
+.user-value {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.user-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 20%;
+  width: 100%;
+  margin-right: 2rem;
+  gap: 1rem;
+}
+.delete-user-btn {
+  cursor: pointer;
+  height: 80%;
+  width: 15%;
+  background-color: indianred;
+  border: 1px thin;
+  border-radius: 5px;
+}
+.edit-user-btn {
+  cursor: pointer;
+  height: 80%;
+  width: 15%;
+  background-color: whitesmoke;
+  border: 1px thin;
+  border-radius: 5px;
+}
+.bx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .user-ul {
+    flex-direction: column;
+  }
+  .user-li {
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+.user-form {
+  position: relative;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+
+  padding: 3.2rem 3.2rem 3.8rem;
+  width: 80vw;
+  height: 42rem;
+}
+
+.user-form-title {
+  margin: 0;
+}
+
+.close-modal-button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+.user-form-input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.user-form-submit-btn {
+  padding: 1rem 0;
+  margin: 1rem;
+  background-color: #555a88;
+  color: white;
+  border: none;
+}
